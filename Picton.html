@@ -1,0 +1,93 @@
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>Neuseeland Reise - Etappe 19, (PICTON)</title>
+
+     <link rel="stylesheet" href="../styles.css" />
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	 
+	 <style>
+        figure img {
+            width: 600px;
+        }
+        .current {
+           font-weight: bold;
+        }
+        #mapid {
+            float:right;
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+        }
+    </style>
+
+</head>
+<body>
+<h1> Picton
+</h1>
+<h2>
+Das Tor zur Südinsel.
+</h2>
+<h3>
+Koordinaten WGS84: 41° 17′ S, 174° 0′ E
+Seehöhe: 79 münN
+</h3>
+
+<div id="mapid"></div>
+<script>
+	var mymap = L.map('mapid').setView([-41.28827, 174.01018], 13);
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(mymap);
+	
+	var marker = L.marker([-41.28827, 174.01018]).addTo(mymap)
+	marker.bindPopup("<b>Picton</b><br>Das Tor zur Südinsel.");
+
+</script>
+
+<p class="info">
+Geographische Lage:    
+Picton befindet sich am Endpunkt eines langen Fjords, dem Queen Charlotte Sound, rund 25 km nördlich von Blenheim. Die Stadt dient als Fährhafen der von Wellington über die Cook Strait reichenden Verbindungsstrecke zwischen der Nord- und Südinsel Neuseelands
+</p>
+
+<p class="info">
+Das Tor zur Südinsel:
+Durch die Interislander Fähren verbunden setzt sich in Picton schließlich der New Zealand State Highway 1 nach Süden fort, der sowohl die Nordinsel als auch die Südinsel durchquert und erst im äußersten Süden der Südinsel bei Bluff endet. Außerdem ist Picton Endstation des South Island Main Trunk Railway, dessen Schienennetz sich über die ganze Südinsel bis nach Invercargill erstreckt und auf dem bis nach Christchurch der Personenzug TranzCoastal verkehrt. 
+</p>
+<br>
+ 
+		<figure role="group">
+			<img src="1280px-Picton_New_Zealand.jpg" alt="Picton am Ende des Queen Charlotte Sound"/> 
+       <figcaption>
+		Picton mit Hafen
+	   </figcaption>
+		</figure>
+		
+		<figure role="group">
+		<img src="1280px-South_Island_Tour_932.jpg" alt="Blick von Picton Richtung Sound"/> 
+       <figcaption>
+		Blick von Picton Richtung Sound
+       </figcaption>
+        </figure>
+		
+<h4 class="links">
+Quellen:
+<ul class="links">
+<li> <a href="https://de.wikipedia.org/wiki/Picton_(Neuseeland)"> Wikipedia Picton</a> </li>  
+<li> <a href="https://de.wikipedia.org/wiki/Picton_(Neuseeland)#/media/File:Picton_New_Zealand.JPG"> Bildquelle Picton mit Hafen</a> </li>
+<li> <a href="https://de.wikipedia.org/wiki/Picton_(Neuseeland)#/media/File:South_Island_Tour_932.jpg"> Bildquelle Blick von von Picton Richtung Sound</a> </li>
+</ul>
+</h4>
+ 
+<nav>
+<a class="previous" href="../18/index.html">Etappe 18</a>
+<span class="current" > Picton </span>
+<a class="next" href="../20/index.html">Etappe 20</a>
+
+</nav>
+<p class="Lars Bechtel">
+<a href="https://github.com/csap6803"> Lars Bechtel (special thanks to Johannes Weber...) </a>
+
+</body>
+</html>
